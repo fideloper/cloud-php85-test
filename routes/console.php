@@ -3,6 +3,7 @@
 use Illuminate\Foundation\Inspiring;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Schedule;
 
 Artisan::command('inspire', function () {
@@ -16,4 +17,5 @@ Schedule::call(function () {
     } catch (\Throwable) {
         // Ignore failures
     }
+    Log::info('Shot some bandwidth.');
 })->everyMinute();
