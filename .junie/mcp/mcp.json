@@ -1,0 +1,11 @@
+{
+    "mcpServers": {
+        "laravel-boost": {
+            "command": "/Users/fideloper/Library/Application Support/Herd/bin/php85",
+            "args": [
+                "/Users/fideloper/Herd/vpc-play/artisan",
+                "boost:mcp"
+            ]
+        }
+    }
+}
